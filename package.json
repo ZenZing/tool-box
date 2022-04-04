@@ -7,7 +7,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "rm -rf ./dist && parcel build index.html",
+    "build:github-page": "rm -rf ./docs && parcel build index.html --out-dir docs"
   },
   "keywords": [],
   "author": "",
